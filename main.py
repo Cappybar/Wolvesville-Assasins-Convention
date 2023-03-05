@@ -10,13 +10,7 @@ double_roles = ('red lady','aura seer','beast hunter','flower child','junior wer
                 'voodoo werewolf','kitten wolf','wolf pacifist','jelly wolf','werewolf berserk','wolf summoner','stubborn werewolf','storm wolf','split wolf',
                 'wolf trickster','sect leader','regular werewolf','pumpkin king','easter bunny','fortune teller')
 
-#while 1:
-#    try:
-#        x,y = pag.locateCenterOnScreen("letters/a.png",confidence=0.8)
-#        pag.click(x,y)
-#        t.sleep(3)
-#    except:
-#        break
+
 while 1:
     chars = {'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'f': 0, 'g': 0, 'h': 0, 'i': 0, 'j': 0, 'k': 0, 'l': 0, 'm': 0,
              'n': 0, 'o': 0, 'p': 0, 'q': 0, 'r': 0, 's': 0, 't': 0, 'u': 0, 'v': 0, 'w': 0, 'x': 0, 'y': 0, 'z': 0, '-':0 ,' ':0}
@@ -53,7 +47,7 @@ while 1:
             for role in roles_result:
                 if letter in role:
                     count += 1
-            print(f"{letter} probability is {int((count / len(roles_result)) * 100)}")
+            print(f"{letter} probability is {int((count / len(roles_result)) * 100)}%")
             top5 += 1
     elif char_length[0] == 'l':
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
@@ -81,7 +75,7 @@ while 1:
             for role in roles_result:
                 if letter in role:
                     count += 1
-            print(f"{letter} probability is {int((count / len(roles_result)) * 100)}")
+            print(f"{letter} probability is {int((count / len(roles_result)) * 100)}%")
             top5 += 1
     else:
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
@@ -106,5 +100,5 @@ while 1:
             for role in roles_result:
                 if letter in role:
                     count += 1
-            print(f"{letter} probability is {int((count / len(roles_result)) * 100)}")
+            print(f"{letter} probability is {int((count / len(roles_result)) * 100)}%")
             top5 += 1
